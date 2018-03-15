@@ -1,6 +1,5 @@
-package chapter2.soundSystem;
+package soundsystem;
 
 public interface MediaPlayer {
     void play();
 }
-

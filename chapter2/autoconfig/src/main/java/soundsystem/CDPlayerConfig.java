@@ -1,4 +1,4 @@
-package chapter2.soundSystem;
+package soundsystem;
 
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;

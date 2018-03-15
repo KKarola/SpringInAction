@@ -1,4 +1,4 @@
-package chapter2.soundSystem;
+package soundsystem;
 
 public interface CompactDisc {
     void play();

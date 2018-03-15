@@ -1,5 +1,6 @@
-package chapter2.soundSystem;
+package soundsystem;
 
+import org.junit.Assert;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.contrib.java.lang.system.StandardOutputStreamLog;
@@ -7,6 +8,8 @@ import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+import soundsystem.CDPlayerConfig;
+import soundsystem.CompactDisc;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
@@ -26,12 +29,12 @@ public class CDPlayerTest1 {
 
     @Test
     public void cdShouldNotBeNull(){
-        assertNotNull(cd);
+        Assert.assertNotNull(cd);
     }
 
     @Test
     public void playTest(){
         player.play();
-        assertEquals("Odtwarzam utwór Stg. Pepper's Lonely Hearts Club Band" + " artysty The Beatles", log.getLog().trim());
+        Assert.assertEquals("Odtwarzam utwór Stg. Pepper's Lonely Hearts Club Band" + " artysty The Beatles", log.getLog().trim());
     }
 }

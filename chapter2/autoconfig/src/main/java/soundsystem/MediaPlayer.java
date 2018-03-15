@@ -1,5 +1,6 @@
-package chapter2.javaConfig;
+package soundsystem;
 
 public interface MediaPlayer {
     void play();
 }
+
